@@ -1,4 +1,247 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+  font-family: AvantXlt;
+  src: url('/fonts/ITCAvantGardeStd-XLt.otf') format('opentype');
+}
+
+@font-face {
+  font-family: AvantMd;
+  src: url('/fonts/ITCAvantGardeStd-Md.otf') format('opentype');
+}
+
+@font-face {
+  font-family: AvantDemi;
+  src: url('/fonts/ITCAvantGardeStd-Demi.otf') format('opentype');
+}
+
+@font-face {
+  font-family: AvantBook;
+  src: url('/fonts/ITCAvantGardeStd-Bk.otf') format('opentype');
+}
+
+@font-face {
+  font-family: AvantBold;
+  src: url('/fonts/ITCAvantGardeStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: AvenirBook;
+  src: url('/fonts/AvenirLTStd-Book_0.otf') format('opentype');
+}
+
+@font-face {
+  font-family: AvenirHeavy;
+  src: url('/fonts/AvenirLTStd-Heavy_0.otf') format('opentype');
+}
+
+* {
+  min-width: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  margin: auto;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.text__glowing {
+  transition: text-shadow 0.3s ease;
+}
+
+.text__glowing:hover {
+  text-shadow: 1px 1px 20px #fff;
+}
+
+#header-nav {
+  animation: blur linear both;
+  animation-timeline: scroll();
+  animation-range: 0 500px;
+}
+
+@keyframes colorChange {
+  from {
+    color: #1d6993;
+    text-shadow: 1px 1px 20px #1d6993;
+    transition: all 0.3s ease-in-out;
+  }
+  to {
+    color: #fff;
+    text-shadow: 1px 1px 20px #fff;
+  }
+}
+
+@keyframes reverseColorChange {
+  from {
+    color: #fff;
+    text-shadow: 1px 1px 20px #fff;
+  }
+  to {
+    color: #1d6993;
+  }
+}
+
+.text__glowing:hover {
+  animation: colorChange 0.5s forwards;
+  animation-timeline: scroll();
+  animation-range: 0 500px;
+}
+
+.text__glowing.black:hover {
+  animation: reverseColorChange 0.5s forwards;
+  animation-timeline: scroll();
+  animation-range: 200px 500px;
+}
+
+@keyframes blur {
+  to {
+    box-shadow: 0px 5px 50px -5px rgba(0, 0, 0, 0.1),
+      0px 0px 0 1px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+#card-service {
+  view-timeline-name: --service;
+  view-timeline-axis: block;
+
+  animation-timeline: --service;
+  animation-name: show;
+
+  animation-range: entry 10% cover 25%;
+
+  animation-fill-mode: both;
+}
+
+/* ? CSS INFINITE SCROLL */
+.scroller {
+  max-width: 100%;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated='true'] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated='true'] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction='right'] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction='left'] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed='fast'] {
+  --_animation-duration: 45s;
+}
+
+.scroller[data-speed='slow'] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+  background: var(--clr-primary-400);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+}
+
+/* for testing purposed to ensure the animation lined up correctly */
+.test {
+  background: red !important;
+}
