@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Nuestro compromiso sigue creciendo para satisfacer las necesidades de nuestros afiliados!",
+    "img": {
+      "src": "/images/news/ig-deposito.webp",
+      "alt": "Nuevo depósito de Asociación Consultora Mutual",
+      "width": 1200,
+      "height": 1600
+    },
+    "paragraph": ["¡Nuestro compromiso sigue creciendo para satisfacer las necesidades de nuestros afiliados!", "En Asociación Consultora Mutual, estamos comprometidos con brindarte el mejor servicio y facilitarte el acceso a productos de calidad a precios competitivos.","¡Tu satisfacción es nuestra prioridad!"]
+  },
+  {
+    "id": 2,
+    "title": "¡Mantené tus alimentos frescos con estilo y ahorro! ",
+    "img": {
+      "src": "/images/news/ig-heladera.jpeg",
+      "alt": "Ofertas en heladeras de calidad",
+      "width": 1200,
+      "height": 1600
+    },
+    "paragraph": ["Descubrí nuestras increíbles ofertas en heladeras de calidad, especialmente seleccionadas para vos.","En Asociación Consultora Mutual, nos apasiona ofrecerte soluciones prácticas para tu hogar. Con diferentes tamaños, estilos y características para elegir, encontrarás la heladera perfecta que se adapte a tus necesidades y a tu estilo de vida.","¡Este beneficio es EXCLUSIVO para nuestros asociados! Sumate a la Asociación Consultora Mutual."]
+  },
+  {
+    "id": 3,
+    "title": "¡Asamblea General Extraordinaria del 27 de septiembre!",
+    "img": {
+      "src": "/images/news/ig-asamblea.webp",
+      "alt": "Asamblea General Extraordinaria de Asociación Consultora Mutual",
+      "width": 1200,
+      "height": 1600      
+    },
+    "paragraph": ["En un encuentro crucial, sometimos a consideración de nuestros asambleístas la aprobación de ocho reglamentos, dando respuesta a la creciente demanda de nuestros asociados por más servicios a precios socialmente justos.","La voz de nuestros mutualistas es nuestra guía, y hoy más que nunca, en tiempos de desafíos económicos, nuestra misión nos impulsa a tomar la iniciativa y buscar soluciones colectivas.","¡Estos nuevos reglamentos son el resultado de esa iniciativa! Estamos comprometidos en expandir y mejorar nuestras prestaciones para brindar soluciones que alivien la tensión entre los ingresos familiares y los gastos en el contexto actual."]
+  },
+  {
+    "id": 4,
+    "title": "¡El pasado 8 de diciembre celebramos el Día de la Familia!",
+    "img": {
+      "src": "/images/news/ig-familia.webp",
+      "alt": "Día de la Familia en Asociación Consultora Mutual",
+      "width": 1200,
+      "height": 1600
+    },
+    "paragraph": [" Compartimos una hermosa jornada para confraternizar y agradecer juntos por los logros de este increíble año.", "En esta día tan especial, las familias de nuestros valiosos miembros del Consejo Directivo, Junta Fiscalizadora y empleados se unieron en un ambiente lleno de alegría y gratitud.","Fue más que un feriado nacional; fue un día para celebrar los lazos que nos unen, para recordar lo que hemos alcanzado juntos y para agradecer a cada uno por ser parte fundamental de nuestra familia mutualista.","¡Gracias por formar parte y por contribuir a nuestro continuo crecimiento y éxito! Sigamos construyendo juntos momentos memorables y fortaleciendo nuestra comunidad."]
+  }
+]

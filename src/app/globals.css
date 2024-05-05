@@ -1,6 +1,7 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600&display=swap');
 
@@ -106,7 +107,7 @@ p {
 #header-nav {
   animation: blur linear both;
   animation-timeline: scroll();
-  animation-range: 0 500px;
+  animation-range: 0 300px;
 }
 
 @keyframes colorChange {
@@ -145,9 +146,7 @@ p {
 
 @keyframes blur {
   to {
-    box-shadow: 0px 5px 50px -5px rgba(0, 0, 0, 0.1),
-      0px 0px 0 1px rgba(0, 0, 0, 0.3);
-    background: rgba(0, 0, 0, 0.3);
+    background: rgb(238, 237, 237);
     backdrop-filter: blur(10px);
   }
 }
@@ -177,7 +176,8 @@ p {
 
 /* ? CSS INFINITE SCROLL */
 .scroller {
-  max-width: 100%;
+  max-width: 1440px;
+  min-width: 100%;
 }
 
 .scroller__inner {
