@@ -1,0 +1,6 @@
+export * from './ButtonCta'
+export * from './Scroll-infinite'
+export * from './Video'
+export * from './TitleMutual'
+export * from './Card-news'
+export * from './Footer'
