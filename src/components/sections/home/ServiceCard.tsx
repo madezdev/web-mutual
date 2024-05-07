@@ -1,5 +1,6 @@
-import { BuildingPeople, CalendarDollar, HandDollarIcon, InvoiceDollar, Law, LineDollar, ShopIcon, TravelIcon } from "@/components/icons"
 import Link from "next/link"
+import { BuildingPeople, CalendarDollar, HandDollarIcon, InvoiceDollar, Law, LineDollar, ShopIcon, TravelIcon } from "@/components/icons"
+
 
 const service = [
   {
@@ -101,7 +102,7 @@ export const ServiceCard = () => {
           id='card-service'
           key={index}
           >
-          <Link href={service.path || ''}
+          <Link href={service.path || ''} scroll={true}
           className='flex flex-col justify-between items-center  transition-all ease-in-out duration-300 cursor-pointer group hover:border-[#92cce7] 
           hover:shadow-lg rounded-xl p-4 shadow-md w-full md:max-w-[22rem] md:h-[17rem] bg-gradient-to-bl from-[#e5f1f9] via-[#c5e3f2] to-[#92cce7]'
           >  
