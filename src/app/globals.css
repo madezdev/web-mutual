@@ -178,6 +178,9 @@ p {
 .scroller {
   max-width: 1440px;
   min-width: 100%;
+  width: 380px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .scroller__inner {

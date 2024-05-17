@@ -1,3 +1,13 @@
+
+
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "allowArray": false,
+  "allowArrowFunction": false,
+  "allowAnonymousClass": false,
+  "allowAnonymousFunction": false,
+  "allowCallExpression": true,
+  "allowNew": false,
+  "allowLiteral": false,
+  "allowObject": false
 }

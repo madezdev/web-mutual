@@ -19,7 +19,7 @@ export const BentoItem = ({ image, title, subtitle, cta, hrf, className }: Props
      <div className='absolute bottom-0 h-full w-full bg-gradient-to-b from-[#151836]/20 via-[#151836]/30 to-[#151836]/80'></div>
       <Image
         src={image}
-        alt='bento'
+        alt='Viajes, Electrónica, Hogar, Indumentaria, Deportes, Belleza, Alimentos, Vehículos, Servicios, Otros'
         width={920}
         height={640}
         className='background transition-scale absolute bottom-0 left-0 top-0

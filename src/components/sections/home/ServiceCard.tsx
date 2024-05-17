@@ -11,7 +11,7 @@ const service = [
     icon: (
       <TravelIcon className='w-12 h-12 text-[#1f6a93] group-hover:text-colorS' />
     ),
-    path: '/turismo'
+    path: '/servicios/turismo'
   },
   {
     title: 'Tienda',
@@ -21,7 +21,7 @@ const service = [
     icon: (
       <ShopIcon className='w-12 h-12 text-[#1f6a93] group-hover:text-colorS' />
     ),
-    path: '/tienda'
+    path: '/servicios/tienda'
   },
   {
     title: 'ayuda económica',

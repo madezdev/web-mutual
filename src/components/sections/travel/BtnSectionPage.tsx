@@ -5,7 +5,7 @@ import { BtnIconRounded } from "./BtnIconRounded"
 const items = [
   {
     title: 'Alojamientos',
-    href: '/turismo/alojamientos',
+    href: '/servicios/turismo/alojamientos',
     icon: (
       <HotelIcon
         width='40'
@@ -16,7 +16,7 @@ const items = [
   },
   {
     title: 'Vuelos',
-    href: '/turismo/vuelos',
+    href: '/servicios/turismo/vuelos',
     icon: (
       <PlaneIcon
         width='40'
@@ -27,7 +27,7 @@ const items = [
   },
   {
     title: 'Paquetes',
-    href: '/turismo/paquetes',
+    href: '/servicios/turismo/paquetes',
     icon: (
       <SuitcaseIcon
         width='40'
@@ -38,7 +38,7 @@ const items = [
   },
   {
     title: 'Actividades',
-    href: '/turismo/actividades',
+    href: '/servicios/turismo/actividades',
     icon: (
       <TicketIcon
         width='40'
@@ -49,7 +49,7 @@ const items = [
   },
   {
     title: 'Disnney',
-    href: '/turismo/disney',
+    href: '/servicios/turismo/disney',
     icon: (
       <MickeyIcon
         width='40'
@@ -60,7 +60,7 @@ const items = [
   },
   {
     title: 'Internacional',
-    href: '/turismo/internacional',
+    href: '/servicios/turismo/internacional',
     icon: (
       <WorldIcon
         width='40'
@@ -71,7 +71,7 @@ const items = [
   },
   {
     title: 'National',
-    href: '/turismo/nacional',
+    href: '/servicios/turismo/nacional',
     icon: (
       <ArgIcon
         width='40'
@@ -86,8 +86,12 @@ export const BtnSectionPage = () => {
   return (
     <>
     {items.map((item: any, index: number) => (
-      <div key={index}>
-        <Link href={item.href}>
+      <div 
+        key={index}
+        className="mx-[4vw] lg:mx-0"
+      >
+        <Link href={item.href}
+        >
           <BtnIconRounded
             title={item.title}
             icon={item.icon}
