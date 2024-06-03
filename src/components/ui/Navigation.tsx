@@ -24,7 +24,7 @@ export const Navigation = () => {
         </div>
         <nav
           id='header-menu'
-          className='fixed w-full h-dvh inset-0 hidden gap-8 md:static md:h-[initial] md:bg-[initial] md:flex md:translate-y-[initial] font-avantMd text-h6 text-colorP items-center justify-center'>
+          className='fixed w-full h-dvh inset-0 hidden gap-8 md:static md:h-[initial] md:bg-[initial] md:flex md:translate-y-[initial] font-avantMd text-h6 text-colorAcento items-center justify-center'>
           <button
             onClick={openSideMenu}
             className='text-[24px] hover:scale-105 hover:text-colorW   transition-all duration-300 ease-in-out'>

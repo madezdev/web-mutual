@@ -58,11 +58,11 @@ svg {
   height: auto;
   max-width: 100%;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: auto;
-  min-height: 100vh;
-  scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
 }
 
@@ -178,6 +178,9 @@ p {
 .scroller {
   max-width: 1440px;
   min-width: 100%;
+  width: 380px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .scroller__inner {
@@ -245,3 +248,5 @@ p {
 .test {
   background: red !important;
 }
+
+
